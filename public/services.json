@@ -1,0 +1,35 @@
+
+
+
+
+[{
+    "name": "Dream Home",
+    "location": "Narsingdi,Madabdi.Dhaka",
+    "ratings": 4,
+    "ratingsCount": 241,
+    "img": "https://i.ibb.co/DVN13Md/home-1.jpg",
+    "quantity": 0
+  },
+  {
+    "name": "Sweet Home",
+    "location": "Narsingdi,Bowacore.Dhaka",
+    "ratings": 4,
+    "ratingsCount": 241,
+    "img": "https://i.ibb.co/16Xj2Fx/home-2.jpg",
+    "quantity": 0
+  },{
+    "name": "Jangale Bari",
+    "location": "Guradia,Narsingdi.Dhaka",
+    "ratings": 4,
+    "ratingsCount": 241,
+    "img": "https://i.ibb.co/VDMvFJd/home-3.jpg",
+    "quantity": 0
+  },{
+    "name": "Paradise",
+    "location": "Gabtoli,Narsingdi.Dhaka",
+    "ratings": 4,
+    "ratingsCount": 241,
+    "img": "https://i.ibb.co/3mLF33L/home-4.jpg",
+    "quantity": 0
+  }]
+ 

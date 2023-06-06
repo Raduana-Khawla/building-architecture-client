@@ -1,0 +1,9 @@
+.body{
+    min-height: 100vh;
+    background: url("https://i.ibb.co/9tzNgpQ/keybord-typing.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

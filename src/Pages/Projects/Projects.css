@@ -1,0 +1,12 @@
+.news-title{
+    background-color: #EEE;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.news-title2{
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

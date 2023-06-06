@@ -1,0 +1,14 @@
+.projectWrap .img .overlay .overlayIn {
+    font-size: 20px;
+    background-color: #0078bb;
+    margin-top: 0px;
+    padding: 10px 12px;
+}
+.projectWrap .img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid;
+    padding: 5px;
+    height: 300px;
+}

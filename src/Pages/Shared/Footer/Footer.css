@@ -1,0 +1,42 @@
+.footer1{
+  border-top-left-radius: 125px;
+}
+.icon {
+  margin: 5px;
+  padding: 5px;
+  /* border-radius: 5px; */
+  color: rgb(155, 155, 155);
+  font-size: 30px;
+}
+.icon:hover {
+  background-color: white;
+}
+.footer-menu {
+  list-style: none;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+  font-size: 16px;
+
+}
+.footer-menu:hover {
+  color: rgb(255, 153, 0);
+}
+.footer-input {
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: gray;
+}
+.footer-container {
+  background-color: #191919;
+  padding: 50px;
+  color: rgb(216, 209, 209);
+}
+.foter-phone-icon {
+  font-size: 30px;
+  color: white;
+}
+.mt-5{
+  color: white;
+}
