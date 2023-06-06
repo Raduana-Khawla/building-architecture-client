@@ -13,14 +13,7 @@ import useAuth from "../../hooks/useAuth";
 
 const Login = () => {
   const [loginData, setLoginData] = useState({});
-  const {
-    user,
-    loginUser,
-    signInWithGoogle,
-    isLoading,
-    signInWithGithub,
-    authError,
-  } = useAuth();
+  const { user, loginUser, signInWithGoogle, isLoading, authError } = useAuth();
 
   const location = useLocation();
   const history = useHistory();
@@ -39,10 +32,6 @@ const Login = () => {
 
   const handleGoogleSignIn = () => {
     signInWithGoogle(location, history);
-  };
-  const handleGithub = () => {
-    signInWithGithub(location, history);
-    console.log("hello");
   };
   return (
     <Container>
@@ -87,14 +76,9 @@ const Login = () => {
             {authError && <Alert severity="error">{authError}</Alert>}
           </form>
           <p>------------------------</p>
-          <div className="d-flex justify-content-evenly">
-            <Button onClick={handleGoogleSignIn} variant="contained">
-              <i className="fab fa-google"></i>
-            </Button>
-            <Button onClick={handleGithub} variant="contained">
-              <i className="fab fa-github"></i>
-            </Button>
-          </div>
+          <Button onClick={handleGoogleSignIn} variant="contained">
+            Google Sign In
+          </Button>
         </Grid>
         <Grid item sx={{ my: 2 }} xs={12} md={6}>
           <img
