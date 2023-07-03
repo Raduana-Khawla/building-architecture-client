@@ -9,7 +9,7 @@ import {
 import React, { useState } from "react";
 import { Grid } from "@mui/material";
 import { NavLink, useHistory } from "react-router-dom";
-import useAuth from "../../hooks/useAuth";
+import useAuth from "./../../../hooks/useAuth";
 
 const Register = () => {
   const [loginData, setLoginData] = useState({});
@@ -94,10 +94,10 @@ const Register = () => {
           )}
           {authError && <Alert severity="error">{authError}</Alert>}
         </Grid>
-        <Grid item sx={{ mt: 13 }} xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <img
             style={{ width: "100%" }}
-            src="https://i.ibb.co/1Trd22k/registernowgif.gif"
+            src="https://i.ibb.co/56LpdQw/login-page.gif"
             alt=""
           />
         </Grid>
@@ -105,4 +105,5 @@ const Register = () => {
     </Container>
   );
 };
+
 export default Register;

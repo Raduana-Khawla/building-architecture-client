@@ -149,7 +149,7 @@ const Navbar = () => {
                         <a
                           className="nav-link drop_item active"
                           aria-current="page"
-                          href="#"
+                          href="/tools"
                         >
                           <span className="text1">Tools</span>
                         </a>
@@ -158,7 +158,7 @@ const Navbar = () => {
                         <a
                           className="nav-link drop_item active"
                           aria-current="page"
-                          href="#"
+                          href="/laborer"
                         >
                           <span className="text1">Laborer</span>
                         </a>
@@ -167,7 +167,7 @@ const Navbar = () => {
                         <a
                           className="nav-link drop_item active"
                           aria-current="page"
-                          href="#"
+                          href="/architect"
                         >
                           <span className="text1">Architect</span>
                         </a>
@@ -198,7 +198,7 @@ const Navbar = () => {
                         <a
                           className="nav-link drop_item active"
                           aria-current="page"
-                          href="#"
+                          href="/apartmentRent"
                         >
                           <span className="text1">Rent</span>
                         </a>

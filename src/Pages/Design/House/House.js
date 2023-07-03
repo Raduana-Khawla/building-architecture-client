@@ -8,7 +8,7 @@ const House = () => {
   const [houseDesigns, sethouseDesigns] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/homeDesign`)
+    fetch(`http://localhost:8000/homeDesign`)
       .then((res) => res.json())
       .then((data) => sethouseDesigns(data));
   }, []);

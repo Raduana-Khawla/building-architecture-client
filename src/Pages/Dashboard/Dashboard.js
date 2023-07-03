@@ -1,4 +1,5 @@
 import * as React from "react";
+import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -14,12 +15,16 @@ import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { Switch, Link, useRouteMatch } from "react-router-dom";
+import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 import { Button } from "@mui/material";
-import MakeAdmin from "./MakeAdmin/MakeAdmin";
-import useAuth from "../../hooks/useAuth";
-import AdminRoute from "../Login/AdminRoute/AdminRoute";
-
+import MakeAdmin from "../Dashboard/MakeAdmin/MakeAdmin";
+import useAuth from "./../../hooks/useAuth";
+import AdminRoute from "./../Login/AdminRoute/AdminRoute";
+import AddServices from "../Apartment/AddServices/AddServices";
+import MyBookings from "./MyBookings/MyBookings";
+import ManageOrder from "./ManageOrder/ManageOrder";
+import ManageProducts from "./ManageProducts/ManageProducts";
+import Pay from "./Pay/Pay";
 const drawerWidth = 200;
 
 function Dashboard(props) {
@@ -35,16 +40,31 @@ function Dashboard(props) {
     <div>
       <Toolbar />
       <Divider />
+      <Link to={`${url}/appointment`}>
+        <Button color="inherit">Appointment</Button>
+      </Link>
       <Link to={`${url}`}>
         <Button color="inherit">Dashboard</Button>
+      </Link>
+      <Link to={`${url}/bookingList`}>
+        <Button color="inherit">Booking List</Button>
+      </Link>
+      <Link to={`${url}/manageOrder`}>
+        <Button color="inherit">Manage Order</Button>
+      </Link>
+      <Link to={`${url}/manageProducts`}>
+        <Button color="inherit">Manage Products</Button>
+      </Link>
+      <Link to={`${url}/pay`}>
+        <Button color="inherit"></Button>
       </Link>
       {admin && (
         <Box>
           <Link to={`${url}/makeAdmin`}>
             <Button color="inherit">Make Admin</Button>
           </Link>
-          <Link to={`${url}/addDoctor`}>
-            <Button color="inherit">Add request</Button>
+          <Link to={`${url}/addServices`}>
+            <li className="dashboard-menu">Add Service</li>
           </Link>
         </Box>
       )}
@@ -140,10 +160,33 @@ function Dashboard(props) {
           <AdminRoute path={`${path}/makeAdmin`}>
             <MakeAdmin></MakeAdmin>
           </AdminRoute>
+          <Route path="/addServices">
+            <AddServices></AddServices>
+          </Route>
+          <Route exact path={`${path}/bookingList`}>
+            <MyBookings></MyBookings>
+          </Route>
+          <Route exact path={`${path}/manageOrder`}>
+            <ManageOrder></ManageOrder>
+          </Route>
+          <Route exact path={`${path}/manageProducts`}>
+            <ManageProducts></ManageProducts>
+          </Route>
+          <Route exact path={`${path}/pay`}>
+            <Pay></Pay>
+          </Route>
         </Switch>
       </Box>
     </Box>
   );
 }
+
+Dashboard.propTypes = {
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window: PropTypes.func,
+};
 
 export default Dashboard;

@@ -1,4 +1,4 @@
-import initializeFirebase from "../Components/Firebase/firebase.init";
+import initializeFirebase from "./../Components/Firebase/firebase.init";
 import { useState, useEffect } from "react";
 import {
   getAuth,
@@ -93,14 +93,12 @@ const useFirebase = () => {
       setIsLoading(false);
     });
     return () => unsubscribed;
-  }, [auth]);
-
+  }, []);
   useEffect(() => {
-    fetch(`http://localhost:3000/users/${user.email}`)
+    fetch(`http://localhost:8000/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);
-
   const logout = () => {
     setIsLoading(true);
     signOut(auth)
@@ -115,7 +113,7 @@ const useFirebase = () => {
 
   const saveUser = (email, displayName, method) => {
     const user = { email, displayName };
-    fetch("http://localhost:3000/users", {
+    fetch("http://localhost:8000/users", {
       method: method,
       headers: {
         "content-type": "application/json",

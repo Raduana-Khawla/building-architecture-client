@@ -6,7 +6,7 @@ import Navbar from "./Pages/Shared/Navbar/Navbar";
 import Home from "./Pages/Home/Home";
 import Contact from "./Pages/Contact/Contact";
 import Login from "./Pages/Login/Login";
-import Register from "./Components/Register/Register";
+import Register from "./Pages/Login/Register/Register";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Institute from "./Pages/Design/Institute/Institute";
@@ -16,6 +16,11 @@ import House from "./Pages/Design/House/House";
 import About from "./Pages/About/About";
 import Projects from "./Pages/Projects/Projects";
 import News from "./Pages/News/News";
+import RentApartment from "./Pages/Apartment/RentApartment/RentApartment";
+import Details from "./Pages/Apartment/Details/Details";
+import Tools from "./Pages/Construction/Tools/Tools";
+import Laborer from "./Pages/Construction/laborer/Laborer";
+import Architect from "./Pages/Construction/Architect/Architect";
 
 function App() {
   return (
@@ -39,8 +44,23 @@ function App() {
             <Route path="/apartmentBooking">
               <ApartmentBooking></ApartmentBooking>
             </Route>
+            <Route path="/service/:serviceId">
+              <Details></Details>
+            </Route>
+            <Route path="/apartmentRent">
+              <RentApartment></RentApartment>
+            </Route>
             <Route path="/house">
               <House></House>
+            </Route>
+            <Route path="/tools">
+              <Tools></Tools>
+            </Route>
+            <Route path="/laborer">
+              <Laborer></Laborer>
+            </Route>
+            <Route path="/architect">
+              <Architect></Architect>
             </Route>
             <Route path="/about">
               <About></About>
