@@ -62,109 +62,114 @@ const Review = () => {
           </div>
         </div>
       </section>
-      <div className="container my-4">
-        <div className="row">
-          <div className="col-lg-4 col-md-4 col-sm-4 col-12 mx-auto">
-            <div className="card border-0 shadow">
-              <div className="card-body p-5">
-                <div className="row mb-4">
-                  <div className="col-sm-6">
-                    <img
-                      src={ReviewPic1}
-                      alt=""
-                      className="rounded-circle img-fluid"
-                    />
-                  </div>
-                  <div className="col-sm-6">
-                    <h4 className="fw-bold mb-0">John Doe</h4>
-                    <p className="text-muted">May 11, 2023</p>
-                    <div className="rating">
-                      <i className="bi bi-star-fill text-warning"></i>
-                      <i className="bi bi-star-fill text-warning"></i>
-                      <i className="bi bi-star-fill text-warning"></i>
-                      <i className="bi bi-star-fill text-warning"></i>
-                      <i className="bi bi-star text-warning"></i>
+      <div>
+        <h2 className="text-center fs-1">Review from User</h2>
+      </div>
+      <section className="py-5 bg-light">
+        <div className="container my-4">
+          <div className="row">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+              <div className="card border-0 shadow">
+                <div className="card-body p-5">
+                  <div className="row mb-4">
+                    <div className="col-sm-6">
+                      <img
+                        src={ReviewPic1}
+                        alt=""
+                        className="rounded-circle img-fluid"
+                      />
+                    </div>
+                    <div className="col-sm-6">
+                      <h4 className="fw-bold mb-0">John Doe</h4>
+                      <p className="text-muted">May 11, 2023</p>
+                      <div className="rating">
+                        <i className="bi bi-star-fill text-warning"></i>
+                        <i className="bi bi-star-fill text-warning"></i>
+                        <i className="bi bi-star-fill text-warning"></i>
+                        <i className="bi bi-star-fill text-warning"></i>
+                        <i className="bi bi-star text-warning"></i>
+                      </div>
                     </div>
                   </div>
+                  <p className="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    ac felis vel purus pulvinar auctor quis vel nunc.
+                  </p>
+                  <p className="font-italic mb-0">
+                    "Great service, I would definitely recommend it."
+                  </p>
                 </div>
-                <p className="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac
-                  felis vel purus pulvinar auctor quis vel nunc.
-                </p>
-                <p className="font-italic mb-0">
-                  "Great service, I would definitely recommend it."
-                </p>
               </div>
             </div>
-          </div>
-          <div className="col-lg-4 col-md-4 col-sm-4 col-12 mx-auto">
-            <div className="card border-0 shadow">
-              <div className="card-body p-5">
-                <div className="row mb-4">
-                  <div className="col-sm-6">
-                    <img
-                      src={ReviewPic3}
-                      alt=""
-                      className="rounded-circle img-fluid"
-                    />
-                  </div>
-                  <div className="col-sm-6">
-                    <h4 className="fw-bold mb-0">John Doe</h4>
-                    <p className="text-muted">May 11, 2023</p>
-                    <div className="rating">
-                      <i className="bi bi-star-fill text-warning"></i>
-                      <i className="bi bi-star-fill text-warning"></i>
-                      <i className="bi bi-star-fill text-warning"></i>
-                      <i className="bi bi-star-fill text-warning"></i>
-                      <i className="bi bi-star text-warning"></i>
+            <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+              <div className="card border-0 shadow">
+                <div className="card-body p-5">
+                  <div className="row mb-4">
+                    <div className="col-sm-6">
+                      <img
+                        src={ReviewPic3}
+                        alt=""
+                        className="rounded-circle img-fluid"
+                      />
+                    </div>
+                    <div className="col-sm-6">
+                      <h4 className="fw-bold mb-0">John Doe</h4>
+                      <p className="text-muted">May 11, 2023</p>
+                      <div className="rating">
+                        <i className="bi bi-star-fill text-warning"></i>
+                        <i className="bi bi-star-fill text-warning"></i>
+                        <i className="bi bi-star-fill text-warning"></i>
+                        <i className="bi bi-star-fill text-warning"></i>
+                        <i className="bi bi-star text-warning"></i>
+                      </div>
                     </div>
                   </div>
+                  <p className="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    ac felis vel purus pulvinar auctor quis vel nunc.
+                  </p>
+                  <p className="font-italic mb-0">
+                    "Great service, I would definitely recommend it."
+                  </p>
                 </div>
-                <p className="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac
-                  felis vel purus pulvinar auctor quis vel nunc.
-                </p>
-                <p className="font-italic mb-0">
-                  "Great service, I would definitely recommend it."
-                </p>
               </div>
             </div>
-          </div>
-          <div className="col-lg-4 col-md-4 col-sm-4 col-12 mx-auto">
-            <div className="card border-0 shadow">
-              <div className="card-body p-5">
-                <div className="row mb-4">
-                  <div className="col-sm-6">
-                    <img
-                      src={ReviewPic2}
-                      alt=""
-                      className="rounded-circle img-fluid"
-                    />
-                  </div>
-                  <div className="col-sm-6">
-                    <h4 className="fw-bold mb-0">John Doe</h4>
-                    <p className="text-muted">May 11, 2023</p>
-                    <div className="rating">
-                      <i className="bi bi-star-fill text-warning"></i>
-                      <i className="bi bi-star-fill text-warning"></i>
-                      <i className="bi bi-star-fill text-warning"></i>
-                      <i className="bi bi-star-fill text-warning"></i>
-                      <i className="bi bi-star text-warning"></i>
+            <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+              <div className="card border-0 shadow">
+                <div className="card-body p-5">
+                  <div className="row mb-4">
+                    <div className="col-sm-6">
+                      <img
+                        src={ReviewPic2}
+                        alt=""
+                        className="rounded-circle img-fluid"
+                      />
+                    </div>
+                    <div className="col-sm-6">
+                      <h4 className="fw-bold mb-0">John Doe</h4>
+                      <p className="text-muted">May 11, 2023</p>
+                      <div className="rating">
+                        <i className="bi bi-star-fill text-warning"></i>
+                        <i className="bi bi-star-fill text-warning"></i>
+                        <i className="bi bi-star-fill text-warning"></i>
+                        <i className="bi bi-star-fill text-warning"></i>
+                        <i className="bi bi-star text-warning"></i>
+                      </div>
                     </div>
                   </div>
+                  <p className="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    ac felis vel purus pulvinar auctor quis vel nunc.
+                  </p>
+                  <p className="font-italic mb-0">
+                    "Great service, I would definitely recommend it."
+                  </p>
                 </div>
-                <p className="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac
-                  felis vel purus pulvinar auctor quis vel nunc.
-                </p>
-                <p className="font-italic mb-0">
-                  "Great service, I would definitely recommend it."
-                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

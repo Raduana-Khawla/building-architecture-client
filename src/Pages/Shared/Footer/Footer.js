@@ -56,7 +56,7 @@ const Footer = () => {
                   <a className="text-light" href="/about">
                     <li className="footer-menu">About</li>
                   </a>
-                  <a className="text-light" href="/services">
+                  <a className="text-light" href="/apartmentBooking">
                     <li className="footer-menu">Services</li>
                   </a>
                   <a className="text-light" href="#">

@@ -9,7 +9,7 @@ const MyBookings = () => {
   const { register, handleSubmit } = useForm();
 
   useEffect(() => {
-    fetch("https://afternoon-wave-99627.herokuapp.com/allOrders")
+    fetch("http://localhost:8000/allOrders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [control]);

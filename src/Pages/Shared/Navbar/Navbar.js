@@ -1,50 +1,12 @@
-import React, { useContext } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
+import UseFirebase from "../../../hooks/useFirebase";
 import "./Navbar.css";
-import { AuthContext } from "../../../contexts/AuthProvider";
 const Navbar = () => {
-  const { user, logout } = useContext(AuthContext);
+  const { admin, user, logout } = UseFirebase();
 
-  const handlelogout = () => {
-    logout()
-      .then(() => {})
-      .catch((err) => console.log(err));
-  };
-  const menuItems = (
-    <React.Fragment>
-      {user?.email ? (
-        <div className="d-flex">
-          <li className="nav-item">
-            <a
-              className="nav-link active"
-              aria-current="page"
-              href="/dashboard"
-            >
-              <span className="text1">Dashboard</span>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              className="nav-link active"
-              aria-current="page"
-              onClick={handlelogout}
-            >
-              <span className="text1">
-                <button onClick={handlelogout}>Sign out</button>
-              </span>
-            </a>
-          </li>
-        </div>
-      ) : (
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/login">
-            <span className="text1">Login</span>
-          </a>
-        </li>
-      )}
-    </React.Fragment>
-  );
   return (
-    <div>
+    <div className="container">
       <nav className="navbar navbar-expand-lg bg-body">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
@@ -68,7 +30,7 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav ms-auto mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/home">
                   <span className="text1">Home</span>
@@ -85,7 +47,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link active dropdown-toggle"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -230,23 +192,61 @@ const Navbar = () => {
                   <span className="text1">Contact Us</span>
                 </a>
               </li>
+
+              {admin && (
+                <li className="nav-item">
+                  <a
+                    className="nav-link active"
+                    aria-current="page"
+                    href="/dashboard"
+                  >
+                    <span className="text1">Dashboard</span>
+                  </a>
+                </li>
+              )}
+
+              {user?.displayName ? (
+                <div className="d-flex">
+                  <button
+                    className="text1 h-50 w-50"
+                    onClick={logout}
+                    variant=""
+                  >
+                    Logout
+                  </button>
+                  <li className="nav-item">
+                    <img
+                      className="w-75 h-75 rounded-circle"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Profile Pic"
+                      src={user?.photoURL}
+                      alt="photo"
+                    />
+                  </li>
+                </div>
+              ) : (
+                <div className="d-flex">
+                  <li className="nav-item">
+                    <a
+                      className="nav-link active"
+                      aria-current="page"
+                      href="/login"
+                    >
+                      <span className="text1">Login</span>
+                    </a>
+                  </li>
+                  <br />
+                  <li className="nav-item">
+                    <img
+                      className="w-50 h-25 rounded-circle"
+                      src="https://i.ibb.co/FWQmPZr/pngtree-beautiful-admin-roles-line-vector-icon-png-image-5256998.jpg"
+                      alt="photo"
+                    />
+                  </li>
+                </div>
+              )}
             </ul>
-            <div className="navbar-center">
-              <ul ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                {menuItems}
-              </ul>
-            </div>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>

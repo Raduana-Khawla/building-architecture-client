@@ -1,19 +1,18 @@
+import { CircularProgress } from "@mui/material";
 import React from "react";
-import { Spinner } from "react-bootstrap";
-import { Redirect, Route } from "react-router-dom";
-import useAuth from "../../../hooks/useAuth";
+import { Route, Redirect } from "react-router-dom";
+import useAuth from "./../../../hooks/useAuth";
 
-const PrivetRoute = ({ children, ...rest }) => {
+const PrivateRoute = ({ children, ...rest }) => {
   const { user, isLoading } = useAuth();
   if (isLoading) {
-    return <Spinner animation="border" variant="danger" />;
+    return <CircularProgress />;
   }
-
   return (
     <Route
       {...rest}
       render={({ location }) =>
-        user.displayName ? (
+        user.email ? (
           children
         ) : (
           <Redirect
@@ -28,4 +27,4 @@ const PrivetRoute = ({ children, ...rest }) => {
   );
 };
 
-export default PrivetRoute;
+export default PrivateRoute;

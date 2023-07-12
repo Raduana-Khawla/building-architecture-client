@@ -84,7 +84,7 @@ const Home = () => {
             <div>
               <h2 className="pt-3 pb-3">Building Design</h2>
               <div className="row">
-                <div className="col-md-3 col-lg-3 col-12 pb-3">
+                <div className="col-md-3 col-lg-3 col-sm-12 col-12 pb-3">
                   <div className="card shadow-sm p-3  rounded border border-0">
                     <div className="card-body">
                       <div className="d-flex justify-content-center">
@@ -98,7 +98,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-lg-3 col-12 pb-3">
+                <div className="col-md-3 col-lg-3 col-sm-12 col-12 pb-3">
                   <div className="card shadow-sm p-3  rounded border border-0 ">
                     <div className="card-body">
                       <div className="d-flex justify-content-center">
@@ -112,7 +112,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-lg-3 col-12 pb-3">
+                <div className="col-md-3 col-sm-12 col-lg-3 col-12 pb-3">
                   <div className="card shadow-sm p-3  rounded border border-0">
                     <div className="card-body">
                       <div className="d-flex justify-content-center">
@@ -130,11 +130,11 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-lg-3 col-12">
+                <div className="col-md-3 col-sm-12 col-lg-3 col-12 pb-3">
                   <div className="card shadow-sm p-3  rounded border border-0">
                     <div className="card-body">
                       <img src={home3} className="w-100 h-100" alt="" />
-                      <h2 className="p-3">hgdfadf</h2>
+                      <h2 className="pt-3">Crafting Iconic Structures</h2>
                     </div>
                   </div>
                 </div>
@@ -143,16 +143,16 @@ const Home = () => {
             <div className="popular-services">
               <h2 className="pt-5 pb-3">Building Construction</h2>
               <div className="row">
-                <div className="col-md-3 col-lg-3 col-12">
-                  <div className="card">
+                <div className="col-md-3 col-sm-12  col-lg-3 col-12">
+                  <div className="card shadow-sm p-3  rounded border border-0">
                     <div className="card-body">
                       <img src={construction1} className="w-100 h-100" alt="" />
-                      <h2 className="my-3">hgdfadf</h2>
+                      <h2 className="pt-2">Bagan Bari Eaden Girden</h2>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-lg-3 col-12">
-                  <div className="card">
+                <div className="col-md-3 col-sm-12 col-lg-3 col-12">
+                  <div className="card shadow-sm p-3  rounded border border-0">
                     <div className="card-body">
                       <div className="d-flex justify-content-center">
                         <img
@@ -169,8 +169,8 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-lg-3 col-12">
-                  <div className="card">
+                <div className="col-md-3 col-sm-12 col-lg-3 col-12">
+                  <div className="card shadow-sm p-3  rounded border border-0">
                     <div className="card-body">
                       <div className="d-flex justify-content-center">
                         <img
@@ -187,8 +187,8 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-lg-3 col-12">
-                  <div className="card">
+                <div className="col-md-3 col-sm-12 col-lg-3 col-12">
+                  <div className="card shadow-sm p-3  rounded border border-0">
                     <div className="card-body">
                       <div className="d-flex justify-content-center">
                         <img
@@ -210,8 +210,8 @@ const Home = () => {
             <div className="popular-services">
               <h2 className="pt-5 pb-3">Apartment</h2>
               <div className="row my-3">
-                <div className="col-md-4 col-lg-4 col-12">
-                  <div className="card">
+                <div className="col-md-4 col-lg-4 col-sm-12 col-12">
+                  <div className="card shadow-sm p-3  rounded border border-0">
                     <div className="card-body">
                       <div className="d-flex justify-content-center">
                         <img
@@ -228,8 +228,8 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4 col-lg-4 col-12">
-                  <div className="card">
+                <div className="col-md-4 col-lg-4 col-sm-12 col-12">
+                  <div className="card shadow-sm p-3  rounded border border-0">
                     <div className="card-body">
                       <div className="d-flex justify-content-center">
                         <img
@@ -246,8 +246,8 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4 col-sm-4 col-12">
-                  <div className="card h-100">
+                <div className="col-md-4 col-sm-4 col-sm-12 col-12">
+                  <div className="card shadow-sm p-3  rounded border border-0 h-100">
                     <div className="card-body">
                       <img src={apartment1} className="w-100 h-75" alt="" />
                     </div>
@@ -257,7 +257,7 @@ const Home = () => {
             </div>
           </div>
           <div className="buttons">
-            <a href="#">see more</a>
+            <a href="/apartmentBooking">see more</a>
           </div>
         </div>
       </div>

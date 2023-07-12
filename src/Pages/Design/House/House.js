@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./House.css";
-import home1 from "../../Shared/img/home-1.jpg";
-import home2 from "../../Shared/img/home-2.jpg";
+import home2 from "../../Shared/img/home001.jpg";
 import home3 from "../../Shared/img/home-3.jpg";
 import home4 from "../../Shared/img/home-4.jpg";
 const House = () => {
-  const [houseDesigns, sethouseDesigns] = useState([]);
+  // const [houseDesigns, sethouseDesigns] = useState([]);
 
-  useEffect(() => {
-    fetch(`http://localhost:8000/homeDesign`)
-      .then((res) => res.json())
-      .then((data) => sethouseDesigns(data));
-  }, []);
-  console.log(houseDesigns);
+  // useEffect(() => {
+  //   fetch(`http://localhost:8000/homeDesign`)
+  //     .then((res) => res.json())
+  //     .then((data) => sethouseDesigns(data));
+  // }, []);
+  // console.log(houseDesigns);
   return (
     <div>
       <div id="carouselExampleDark" className="carousel carousel-dark slide">
@@ -40,7 +39,7 @@ const House = () => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="10000">
-            <img src={home2} className="d-block w-100 house-img" alt="home2" />
+            <img src={home2} className="d-block house-img" alt="home2" />
             <div className="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>
@@ -49,7 +48,7 @@ const House = () => {
             </div>
           </div>
           <div className="carousel-item" data-bs-interval="2000">
-            <img src={home3} className="d-block house-img w-100" alt="home3" />
+            <img src={home3} className="d-block house-img" alt="home3" />
             <div className="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>
@@ -58,7 +57,7 @@ const House = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src={home4} className="d-block house-img w-100" alt="home4" />
+            <img src={home4} className="d-block house-img" alt="home4" />
             <div className="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>
@@ -96,36 +95,36 @@ const House = () => {
         <div className="card mb-3">
           {/* {houseDesigns?.map((pd, index) => ( */}
           <div className="row g-0">
-            <div className="col-md-3 ">
+            <div className="col-md-3 col-lg-3 col-sm-12 col-12">
               <div className="card-body">
                 <h5 className="card-title fs-2 text-center text-dark bold">
                   Dream Home
                 </h5>
-                <p className="card-text">
+                <p className="card-text text-start">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
                   longer.
                 </p>
                 <p>
-                  <a href="#" className="btn center btn-primary">
+                  <a href="#" className="btn btn-primary">
                     Go somewhere
                   </a>
                 </p>
               </div>
             </div>
-            <div className="col-md-3 gap-2">
+            <div className="col-md-3 col-lg-3 col-sm-12 col-12">
               <img
                 src="https://i.ibb.co/DVN13Md/home-1.jpg"
                 className="w-100 h-100 img-fluid rounded-start"
                 alt="img1"
               />
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 col-lg-3 col-sm-12 col-12">
               <div className="card-body">
                 <h5 className="card-title fs-2 text-dark text-center bold">
                   Sweet Home
                 </h5>
-                <p className="card-text">
+                <p className="card-text text-start">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
                   longer.
@@ -135,7 +134,7 @@ const House = () => {
                 </a>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 col-lg-3 col-sm-12 col-12">
               <img
                 src={home2}
                 className="w-100 h-100 img-fluid rounded-start"
@@ -144,19 +143,19 @@ const House = () => {
             </div>
           </div>
           <div className="row g-0">
-            <div className="col-md-3">
+            <div className="col-md-3 col-lg-3 col-sm-12 col-12">
               <img
                 src={home4}
                 className="w-100 h-100 img-fluid rounded-start"
                 alt="img2"
               />
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 col-lg-3 col-sm-12 col-12">
               <div className="card-body">
                 <h5 className="card-title fs-2 text-center text-dark bold">
                   Paradise
                 </h5>
-                <p className="card-text">
+                <p className="card-text text-start">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
                   longer.
@@ -166,19 +165,19 @@ const House = () => {
                 </a>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 col-lg-3 col-sm-12 col-12">
               <img
                 src={home3}
                 className="w-100 h-100 img-fluid rounded-start"
                 alt="img2"
               />
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 col-lg-3 col-sm-12 col-12">
               <div className="card-body">
                 <h5 className="card-title fs-2 text-center text-dark bold">
                   Shifa's House
                 </h5>
-                <p className="card-text">
+                <p className="card-text text-start">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
                   longer.

@@ -8,26 +8,24 @@ const About = () => {
     <>
       <section className="my-5 container colorfull">
         <div className="row">
-          <div className="col-md-5 mb-3">
+          <div className="col-md-5 col-lg-5 col-sm-12 col-12 mb-3">
             <img className="img-fluid rounded-circle" src={aboutImage} alt="" />
           </div>
-          <div className="col-md-6 mb-2 mt-5 ms-5">
+          <div className="col-md-6 col-lg-6 col-sm-12 col-12 mb-2 mt-5 text-center">
             <h4>
-              <span className="me-5 text-white">
-                Welcome to Noor Construction
-              </span>
+              <span className="text-white">Welcome to Noor Construction</span>
             </h4>
             <br />
-            <h3 className="fw-bolder w-50 ms-5">
+            <h3 className="text-center fw-bolder w-50">
               To persevere with faithfulness
             </h3>
-            <p>
+            <p className="mt-5">
               Civil engineering is a branch of engineering that deals with the
               design, construction, and maintenance of infrastructure, such as
-              buildings, roads, bridges, tunnels, airports, and water supply and
-              sewage systems. Civil engineers use their knowledge of
-              mathematics, physics, and materials science to create functional
-              and safe structures that meet the needs of society.
+              buildings, roads, bridges, tunnels and water supply and sewage
+              systems. Civil engineers use their knowledge of mathematics,
+              physics, and materials science to create functional and safe
+              structures that meet the needs of society.
             </p>
             <br />
             <p className="text-white"></p>
@@ -36,8 +34,8 @@ const About = () => {
       </section>
       <section className="container my-3">
         <div className="row">
-          <div className="col-md-6 col-sm-6 col-12">
-            <p className="">
+          <div className="col-md-6 col-lg-6 col-sm-12 col-12">
+            <p className="text-start mt-3">
               Noor Construction Ltd. is a company started its journey in 2007
               with the vision of changing the present Real Estate buildings of
               Bangladesh. The company is backed by 28 years experienced
@@ -54,12 +52,17 @@ const About = () => {
               the belief ‘’Quality creates the demand’’
             </p>
           </div>
-          <div className="col-md-6 col-sm-6 col-12">
+          <div className="col-md-6 col-lg-6 col-sm-12 col-12">
             <img src={groupPic} alt="" className="w-100 h-100" srcset="" />
           </div>
         </div>
       </section>
-      <Member></Member>
+      <section>
+        <div className="bg-light text-center py-5">
+          <h2>Our Team Members</h2>
+          <Member></Member>
+        </div>
+      </section>
     </>
   );
 };

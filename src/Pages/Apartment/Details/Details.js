@@ -7,7 +7,7 @@ const Details = () => {
   const [service, setService] = useState({});
   const { user } = useAuth();
   const { serviceId } = useParams();
-  console.log(serviceId);
+
   const {
     register,
     handleSubmit,

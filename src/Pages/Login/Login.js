@@ -36,7 +36,7 @@ const Login = () => {
   return (
     <Container>
       <Grid container spacing={2}>
-        <Grid item sx={{ mt: 8 }} xs={12} md={6}>
+        <Grid item sx={{ mt: 4 }} xs={12} md={6}>
           <Typography variant="body1" gutterBottom>
             Login
           </Typography>
@@ -80,7 +80,7 @@ const Login = () => {
             Google Sign In
           </Button>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} mb={2}>
           <img
             style={{ width: "100%" }}
             src="https://i.ibb.co/56LpdQw/login-page.gif"

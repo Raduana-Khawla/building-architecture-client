@@ -1,6 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
-const Contact = () => {
+export default function Contact() {
+  const form = useRef();
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_nsnj7qk",
+        "template_9e6l7r7",
+        form.current,
+        "WEkNCy9JEhMKa66LE"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Success");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
+
   return (
     <div className="container my-5 body">
       <section id="contact" className="container-fluid  py-5">
@@ -34,50 +59,40 @@ const Contact = () => {
               <div className=" p-4">
                 <div className="text-center border p-4">
                   <h3 className="text-warning bg-dark p-2">Contact Form</h3>
-                  <input
-                    className="form-control"
-                    type="text"
-                    name=""
-                    placeholder="Name"
-                    id=""
-                  />{" "}
-                  <br />
-                  <input
-                    className="form-control"
-                    type="email"
-                    name=""
-                    placeholder="Email"
-                    id=""
-                  />{" "}
-                  <br />
-                  <input
-                    className="form-control"
-                    type="number"
-                    name=""
-                    placeholder="Number"
-                    id=""
-                  />{" "}
-                  <br />
-                  <input
-                    className="form-control"
-                    type="date"
-                    name=""
-                    placeholder="Date"
-                    id=""
-                  />{" "}
-                  <br />
-                  <textarea
-                    className="form-control"
-                    name=""
-                    placeholder="Message"
-                    id=""
-                    cols="20"
-                    rows="3"
-                  ></textarea>{" "}
-                  <br />
-                  <button type="submit" className="btn btn-dark text w-100">
-                    Submit
-                  </button>
+                  <form ref={form} onSubmit={sendEmail}>
+                    <div className="form-group mb-3">
+                      <input
+                        type="email"
+                        name="user_email"
+                        className="form-control bg-light"
+                        placeholder="Enter your Email Address *"
+                      />
+                    </div>
+                    <div className="form-group mb-3">
+                      <input
+                        type="text"
+                        name="user_name"
+                        className="form-control bg-light"
+                        placeholder="Enter your Name *"
+                      />
+                    </div>
+                    <div className="form-group mb-3">
+                      <textarea
+                        name="message"
+                        className="form-control bg-light"
+                        cols="30"
+                        rows="5"
+                        placeholder="Message *"
+                      ></textarea>
+                    </div>
+                    <div className="form-group text-center">
+                      <input
+                        type="submit"
+                        className="btn d-grid gap-2 col-6 mx-auto btn-danger"
+                        value="Send"
+                      />
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -96,5 +111,4 @@ const Contact = () => {
       </section>
     </div>
   );
-};
-export default Contact;
+}

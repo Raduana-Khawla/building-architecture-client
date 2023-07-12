@@ -14,8 +14,8 @@ const Member = () => {
   return (
     <div className="container my-5">
       <div id="team" className="row">
-        <div className="col-lg-4 col-md-4">
-          <div className="card h-100 shadow-sm p-3 rounded">
+        <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+          <div className="card shadow-sm p-3  rounded border border-0 h-100">
             <div className="card-body ">
               <div className="d-flex justify-content-center">
                 <img
@@ -49,8 +49,8 @@ const Member = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-4 col-md-4">
-          <div className="card h-100 shadow-sm p-3 rounded">
+        <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+          <div className="card border border-0 h-100 shadow-sm p-3 rounded">
             <div className="card-body">
               <div className="d-flex justify-content-center">
                 <img
@@ -81,8 +81,8 @@ const Member = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-4 col-md-4">
-          <div className="card h-100 shadow-sm p-3 rounded">
+        <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+          <div className="card h-100 border border-0 shadow-sm p-3 rounded">
             <div className="card-body">
               <div className="d-flex justify-content-center">
                 <img

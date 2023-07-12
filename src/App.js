@@ -10,7 +10,6 @@ import Register from "./Pages/Login/Register/Register";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Institute from "./Pages/Design/Institute/Institute";
-import ApartmentBooking from "./Pages/Apartment/ApartmentBooking";
 import Religious from "./Pages/Design/Religious/Religious";
 import House from "./Pages/Design/House/House";
 import About from "./Pages/About/About";
@@ -21,6 +20,8 @@ import Details from "./Pages/Apartment/Details/Details";
 import Tools from "./Pages/Construction/Tools/Tools";
 import Laborer from "./Pages/Construction/laborer/Laborer";
 import Architect from "./Pages/Construction/Architect/Architect";
+import Services from "./Pages/Apartment/Services";
+import PrivateRoute from "../src/Components/Shared/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
               <Religious></Religious>
             </Route>
             <Route path="/apartmentBooking">
-              <ApartmentBooking></ApartmentBooking>
+              <Services></Services>
             </Route>
             <Route path="/service/:serviceId">
               <Details></Details>
@@ -80,9 +81,9 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
-            <Route path="/dashboard">
+            <PrivateRoute path="/dashboard">
               <Dashboard></Dashboard>
-            </Route>
+            </PrivateRoute>
           </Switch>
           <Footer></Footer>
         </Router>

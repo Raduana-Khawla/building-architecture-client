@@ -26,7 +26,7 @@ const ManageOrder = () => {
       });
   };
   useEffect(() => {
-    fetch("https://afternoon-wave-99627.herokuapp.com/allOrders")
+    fetch("http://localhost:8000/allOrders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [control]);
@@ -39,14 +39,11 @@ const ManageOrder = () => {
 
   const onSubmit = (data) => {
     // console.log(data, orderId);
-    fetch(
-      `https://afternoon-wave-99627.herokuapp.com/statusUpdate/${orderId}`,
-      {
-        method: "PUT",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify(data),
-      }
-    )
+    fetch(`http://localhost:8000/statusUpdate/${orderId}`, {
+      method: "PUT",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(data),
+    })
       .then((res) => res.json())
       .then((result) => {
         alert("status update Successfully!");
@@ -55,7 +52,7 @@ const ManageOrder = () => {
   };
 
   const handleDelete = (id) => {
-    fetch(`https://afternoon-wave-99627.herokuapp.com/deleteOrder/${id}`, {
+    fetch(`http://localhost:8000/deleteOrder/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

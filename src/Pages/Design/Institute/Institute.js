@@ -16,7 +16,7 @@ const Institute = () => {
         <div className="container gallery-container">
           <div className="tz-gallery">
             <div className="row projectWrap ">
-              <div className="col-sm-6 col-md-4">
+              <div className="col-lg-4 col-md-4 col-sm-12 col-12">
                 <div className="img">
                   <a className="lightbox" href="bharatesh-education-trust.php">
                     <img
@@ -35,7 +35,7 @@ const Institute = () => {
                   </a>
                 </div>
               </div>
-              <div className="col-sm-6 col-md-4">
+              <div className="col-lg-4 col-md-4 col-sm-12 col-12">
                 <div className="img">
                   <a className="lightbox" href="blueridge-school.php">
                     <img
@@ -54,7 +54,7 @@ const Institute = () => {
                   </a>
                 </div>
               </div>
-              <div className="col-sm-6 col-md-4">
+              <div className="col-lg-4 col-md-4 col-sm-12 col-12">
                 <div className="img">
                   <a
                     className="lightbox"
@@ -78,7 +78,7 @@ const Institute = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-md-8">
+              <div className="col-lg-8 col-md-8 col-sm-12 col-12">
                 <div className="img">
                   <a className="lightbox" href="paranjape-vidya-mandir.php">
                     <img
@@ -98,7 +98,7 @@ const Institute = () => {
                   </a>
                 </div>
               </div>
-              <div className="col-sm-6 col-md-4">
+              <div className="col-lg-4 col-md-4 col-sm-12 col-12">
                 <div className="img">
                   <a className="lightbox" href="shri-chitrapur-math.php">
                     <img
@@ -117,7 +117,7 @@ const Institute = () => {
                   </a>
                 </div>
               </div>
-              <div className="col-sm-6 col-md-4">
+              <div className="col-lg-4 col-md-4 col-sm-12 col-12">
                 <div className="img">
                   <a className="lightbox" href="nift-mumbai.php">
                     <img
@@ -137,7 +137,7 @@ const Institute = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-md-4">
+              <div className="col-lg-4 col-md-4 col-sm-12 col-12">
                 <div className="img">
                   <a className="lightbox" href="shri-chitrapur-math.php">
                     <img
@@ -156,7 +156,7 @@ const Institute = () => {
                   </a>
                 </div>
               </div>
-              <div className="col-sm-6 col-md-4">
+              <div className="col-lg-4 col-md-4 col-sm-12 col-12">
                 <div className="img">
                   <a className="lightbox" href="nift-mumbai.php">
                     <img

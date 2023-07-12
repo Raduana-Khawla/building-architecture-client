@@ -31,8 +31,8 @@ const MakeAdmin = () => {
     e.preventDefault();
   };
   return (
-    <div>
-      <h2>Make an Admin</h2>
+    <div className="bg-light mt-5 p-5">
+      <h2 className="text-black">Make an Admin</h2>
       <form onSubmit={handleAdminSubmit}>
         <TextField
           sx={{ width: "50%" }}
